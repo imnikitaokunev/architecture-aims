@@ -1,0 +1,32 @@
+header
+	header_logo
+	menu
+		menu_item
+		menu_item
+		menu_item
+		menu_item
+		menu_item
+		menu_item
+	search
+main-section
+	text
+		text_name
+		text_meaning
+			text_meaning_number
+			text_meaning_quote
+	font
+		main-section-img
+		main-section-numbers
+			main-section-numbers_item
+			main-section-numbers_item
+			main-section-numbers_item
+			main-section-numbers_item
+about-progect
+	wrapper
+		about-progect_title
+		about-progect_subtitle
+	about-us
+		about-us_text
+		about-us_img
+	
+	
