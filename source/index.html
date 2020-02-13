@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet"  href="./css/header.css">
+        <link rel="stylesheet"  href="./css/main-section.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +14,9 @@
 
         <header class="header">
             <div class="header__logo">
-                <a href="#">Selene.</a>
+                <a href="#">
+                    <img src="./img/logo.png" alt="image" class="logo__image">   
+                </a>
             </div>
             <nav class="menu">
                 <ul>
@@ -35,23 +41,28 @@
                 </ul>
             </nav>
             <div class="search">
-               <a href="#">Search</a>
+               <a href="#search"> <img src="./img/Search.png" alt="image" class="search__image"></a>
            </div>
         </header>
         
         <main>
             <article class="main-section">
-                  <div class="arcitecture-aims">
-                        <img src="./img/Photo.png" alt="image" class="museum__image">
-                      <h5 class="arcitecture-aims_author">
-                                John Doe
-                      </h5>
-                        <h2 class="arcitecture-aims_number">
+                    <div class="arcitecture-aims">
+                        <span>
+                            <h2 class="arcitecture-aims_number">
                                 01
                             </h2>
-                        <h1 class="arcitecture-aims_name">
-                                Architecture aims at eternity
-                            </h1>
+                            <div class="arcitecture-aims_title">
+                                <h5 class="arcitecture-aims_author">
+                                    John Doe
+                                </h5>
+                                <h1 class="arcitecture-aims_name">
+                                    Architecture <br> aims at eternity
+                                </h1>
+                            </div>
+                        </span>
+                        <img src="./img/museum.png" alt="image" class="museum__image">
+                    </div>        
                             <nav class="arcitecture-aims_page">
                                 <ul>
                                    <li class="arcitecture-aims_page_item">
@@ -68,7 +79,6 @@
                                           </li>
                                 </ul>
                     </nav>
-                </div>
             <div class="arcitecture-ideas">
                   <div class="wrapper">
                         <h2 class="arcitecture-ideas_title">
@@ -81,10 +91,12 @@
                          </p>
                 </div>
                 <div class="create-idea">
+                    <span>
                       <h1 class="create-idea_text">
-                             We create cool ideas.
+                             We create<br> cool ideas.
                       </h1>
-                         <img src="./img/Photo2.png" alt="image" class="building__image">
+                    </span>
+                         <img src="./img/building.png" alt="image" class="building__image">
                 </div>
             </div>
             </article>

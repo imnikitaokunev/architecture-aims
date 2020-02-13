@@ -1,0 +1,53 @@
+.header,
+.header .menu ul,
+.header .search {
+    display: flex;
+}
+
+li {
+    /* убрать маркеры у списка */
+    list-style-type: none;
+}
+
+.menu a { 
+     color: black; 
+     text-decoration: none;
+}
+
+.menu a:hover { 
+    text-decoration: none;
+    border-bottom: 6px solid #e8e8e8;
+}
+
+.arcitecture-aims_page a { 
+    color: #e8e8e8; 
+    text-decoration: none;
+}
+
+.arcitecture-aims_page a:hover { 
+   text-decoration: line-through;
+   color: #000;
+}
+
+.header .menu .menu__item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    /* текст в верхнем регистре */
+    text-transform: lowercase;
+    /* внешний отступ (со значениями логика такая же) */
+    margin: 0 35px;
+    /* анимация свойств которые будут меняться */
+    transition: 300ms;
+}
+
+.header .menu .menu__link:hover {
+    color: #fff;
+    background-color: #00b0ff;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-around;
+}
+

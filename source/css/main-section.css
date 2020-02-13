@@ -1,0 +1,114 @@
+.arcitecture-aims, .arcitecture-aims_page{
+ font-family: 'Raleway';
+ font-style: bold;
+ text-align: left;
+}
+.arcitecture-aims .arcitecture-aims_author{
+    font-weight: 400;
+    font-size: 18px;
+    color: #bcc0cd;
+}
+.arcitecture-aims .arcitecture-aims_name {
+    font-size: 92px;
+    color: #000;  
+    border-bottom: 15px solid #97d1eb;
+    margin-bottom: 0;
+}
+
+.arcitecture-aims_page{
+    margin-left: 13%;
+}
+
+.arcitecture-aims .arcitecture-aims_number{
+    padding: 60px;
+    top:0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 35px;
+	background:#97d1eb;
+    font-size: 72px;
+    color: #ffffff;  
+    display: inline-block;
+}
+
+.arcitecture-aims_title {
+    display: inline-block;
+}
+
+.main-section {
+    padding: 130px 0;
+}
+
+.arcitecture-aims,
+.arcitecture-ideas, .create-idea,
+.arcitecture-aims_page ul {
+    display: flex;
+}
+
+.museum__image {
+    float: right;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.arcitecture-aims_page .arcitecture-aims_page_item {
+    font-size: 18px;
+    /* текст в верхнем регистре */
+    text-transform: lowercase;
+    /* внутренний отступ (первое число – отступ с верхнего края и нижнего, второе – с правого и левого) */
+    padding: 7px 10px;
+    /* внешний отступ (со значениями логика такая же) */
+    margin: 0 5px;
+    /* анимация свойств которые будут меняться */
+    transition: 300ms;
+}
+
+
+.wrapper{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #bcc0cd;
+    margin-left: 10%;
+}
+
+.wrapper .arcitecture-ideas_title{
+    font-size: 72px;
+}
+
+.wrapper .arcitecture-ideas_subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.create-idea_text {
+    font-family: 'Raleway';
+    font-style: bold;
+    font-size: 92px;
+}
+
+.building__image{
+    float: right;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.arcitecture-aims, .create-idea {
+    width: 100%;
+    display:inline-block;
+    position:relative;
+}
+
+.arcitecture-ideas {
+    width: 100%;
+}
+    
+.arcitecture-aims span, .create-idea span {
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
