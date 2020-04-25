@@ -1,18 +1,28 @@
 .architecture-aims {
-    background-image: url(../img/museum.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 70%;
     height: 70%;
     font-weight: bold;
     font-family: "Raleway";
+    position: relative;
+}
+
+.architecture-aims .architecture-aims__image {
+    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.architecture-aims .architecture-aims__image img {
+    width: 70.5%;
 }
 
 .architecture-aims__content {
-    height: 95%;
+    top: 0;
+    height: 100%;
     display: flex;
     margin-left: 7%;
     align-items: center;
+    position: absolute;
 }
 
 .architecture-aims .architecture-aims__content .architecture-aims__slider {
@@ -44,16 +54,9 @@
     justify-content: center;
 }
 
-/* .architecture-aims .architecture-aims__image {
-    left: 29.5%;
-    z-index: -1;
-    height: 70.5%;
-    position: absolute;
-} */
-
 .architecture-aims .architecture-aims__content .architecture-aims__quote {
-    max-width: 700px;
-    margin-left: 3.1%;
+    max-width: 800px;
+    margin-left: 4.7%;
 }
 
 .architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__author {
@@ -71,7 +74,8 @@
 }
 
 .architecture-aims .architecture-aims__page {
-    height: 5%;
+    position: absolute;
+    bottom: 3%;
     margin-left: 13.3%;
 }
 
