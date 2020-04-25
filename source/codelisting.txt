@@ -18,11 +18,11 @@ architecture-aims
 		architecture-aims__quote
 			architecture-aims-quote__author
 			architecture-aims-quote__text
-		architecture-aims__page
-			architecture-aims-page__item
-			architecture-aims-page__item
-			architecture-aims-page__item
-			architecture-aims-page__item
+	architecture-aims__page
+		architecture-aims-page__item
+		architecture-aims-page__item
+		architecture-aims-page__item
+		architecture-aims-page__item
 about-project
 	wrapper
 		about-project__title

@@ -37,25 +37,12 @@ li {
     border-bottom: 6px solid #e8e8e8;
 }
 
-/* .arcitecture-aims__page a {
-    color: #e8e8e8;
-    text-decoration: none;
-}
-
-.arcitecture-aims__page a:hover {
-    text-decoration: line-through;
-    color: #000;
-} */
-
 .header .menu .menu__item {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 18px;
-    /* текст в верхнем регистре */
     text-transform: lowercase;
-    /* внешний отступ (со значениями логика такая же) */
     margin: 0 35px;
-    /* анимация свойств которые будут меняться */
     transition: 300ms;
 }
 

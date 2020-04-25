@@ -4,7 +4,6 @@
     background-position: right;
     background-size: 70%;
     height: 70%;
-    /* display: flex; */
     font-weight: bold;
     font-family: "Raleway";
 }
@@ -54,7 +53,7 @@
 
 .architecture-aims .architecture-aims__content .architecture-aims__quote {
     max-width: 700px;
-    margin-left: 4.3%;
+    margin-left: 3.1%;
 }
 
 .architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__author {
@@ -73,6 +72,7 @@
 
 .architecture-aims .architecture-aims__page {
     height: 5%;
+    margin-left: 13.3%;
 }
 
 .architecture-aims .architecture-aims__page ul {
@@ -80,14 +80,20 @@
 }
 
 .architecture-aims .architecture-aims__page ul .architecture-aims-page__item {
-    padding: 0px 20px;
     font-size: 18px;
-    /* текст в верхнем регистре */
     text-transform: lowercase;
-    /* внутренний отступ (первое число – отступ с верхнего края и нижнего, второе – с правого и левого) */
     padding: 7px 10px;
-    /* внешний отступ (со значениями логика такая же) */
     margin: 0 5px;
-    /* анимация свойств которые будут меняться */
     transition: 300ms;
+}
+
+.architecture-aims .architecture-aims__page ul .architecture-aims-page__item a {
+    color: #e8e8e8;
+    text-decoration: none;
+}
+
+.architecture-aims .architecture-aims__page ul .selected a,
+.architecture-aims .architecture-aims__page ul .architecture-aims-page__item a:hover {
+    text-decoration: line-through;
+    color: #000;
 }
