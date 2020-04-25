@@ -1,17 +1,93 @@
 .architecture-aims {
-    font-family: "Raleway";
+    background-image: url(../img/museum.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%;
+    height: 70%;
+    /* display: flex; */
     font-weight: bold;
+    font-family: "Raleway";
 }
 
-.architecture-aims .architecture-aims__number {
+.architecture-aims__content {
+    height: 95%;
+    display: flex;
     margin-left: 7%;
+    align-items: center;
+}
+
+.architecture-aims .architecture-aims__content .architecture-aims__slider {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.architecture-aims .architecture-aims__content .architecture-aims__slider .architecture-aims-slider__button {
+    width: 72px;
+    height: 73px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
     justify-content: center;
-    height: 190px;
-    width: 190px;
-    background: #97d1eb;
+    background-color: #ffffff;
+    border: 1px solid #eff1f5;
+}
+
+.architecture-aims .architecture-aims__content .architecture-aims__slider .architecture-aims-slider__number {
+    width: 193px;
+    height: 193px;
+    display: flex;
     font-size: 72px;
     color: #ffffff;
     text-align: center;
+    align-items: center;
+    background: #97d1eb;
+    justify-content: center;
+}
+
+/* .architecture-aims .architecture-aims__image {
+    left: 29.5%;
+    z-index: -1;
+    height: 70.5%;
+    position: absolute;
+} */
+
+.architecture-aims .architecture-aims__content .architecture-aims__quote {
+    max-width: 700px;
+    margin-left: 4.3%;
+}
+
+.architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__author {
+    font-size: 18px;
+    font-weight: 400;
+    color: #bcc0cd;
+}
+
+.architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__text {
+    color: #000;
+    font-size: 92px;
+    margin-top: 40px;
+    padding-bottom: 47px;
+    border-bottom: 15px solid #97d1eb;
+}
+
+.architecture-aims .architecture-aims__page {
+    height: 5%;
+}
+
+.architecture-aims .architecture-aims__page ul {
+    display: flex;
+}
+
+.architecture-aims .architecture-aims__page ul .architecture-aims-page__item {
+    padding: 0px 20px;
+    font-size: 18px;
+    /* текст в верхнем регистре */
+    text-transform: lowercase;
+    /* внутренний отступ (первое число – отступ с верхнего края и нижнего, второе – с правого и левого) */
+    padding: 7px 10px;
+    /* внешний отступ (со значениями логика такая же) */
+    margin: 0 5px;
+    /* анимация свойств которые будут меняться */
+    transition: 300ms;
 }
