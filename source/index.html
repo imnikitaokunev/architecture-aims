@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet"  href="./css/header.css">
-        <link rel="stylesheet"  href="./css/main-section.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Architecture aims</title>
-    </head>
-    <body>
 
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main-section.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+    </head>
+
+    <body>
         <header class="header">
             <div class="header__logo">
-                <a href="#">
-                    <img src="./img/logo.png" alt="image" class="logo__image">   
-                </a>
+                <a href="#"><img src="./img/logo.png" alt="image" class="logo__image" /></a>
             </div>
             <nav class="menu">
                 <ul>
@@ -41,65 +40,62 @@
                 </ul>
             </nav>
             <div class="search">
-               <a href="#search"> <img src="./img/Search.png" alt="image" class="search__image"></a>
-           </div>
-        </header>
-        
-        <main>
-            <article class="main-section">
-                    <div class="arcitecture-aims">
-                        <span>
-                            <h2 class="arcitecture-aims_number">
-                                01
-                            </h2>
-                            <div class="arcitecture-aims_title">
-                                <h5 class="arcitecture-aims_author">
-                                    John Doe
-                                </h5>
-                                <h1 class="arcitecture-aims_name">
-                                    Architecture <br> aims at eternity
-                                </h1>
-                            </div>
-                        </span>
-                        <img src="./img/museum.png" alt="image" class="museum__image">
-                    </div>        
-                            <nav class="arcitecture-aims_page">
-                                <ul>
-                                   <li class="arcitecture-aims_page_item">
-                                      <a href="#01">01</a>
-                                   </li>
-                                   <li class="arcitecture-aims_page_item">
-                                       <a href="#02">02</a>
-                                    </li>
-                                    <li class="arcitecture-aims_page_item">
-                                          <a href="#03">03</a>
-                                       </li>
-                                       <li class="arcitecture-aims_page_item">
-                                             <a href="#04">04</a>
-                                          </li>
-                                </ul>
-                    </nav>
-            <div class="arcitecture-ideas">
-                  <div class="wrapper">
-                        <h2 class="arcitecture-ideas_title">
-                              Curabitur volutpat
-                          </h2>
-                         <p class="arcitecture-ideas_subtitle">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas vehicula<br>
-                                eros, et pellentesque justo ornare nec. Curabitur volutpat, quam in mollis luctus, enim risus<br>
-                                libero, eu vehicula sapien nenc et tortor.<br> 
-                         </p>
-                </div>
-                <div class="create-idea">
-                    <span>
-                      <h1 class="create-idea_text">
-                             We create<br> cool ideas.
-                      </h1>
-                    </span>
-                         <img src="./img/building.png" alt="image" class="building__image">
-                </div>
+                <a href="#search">
+                    <img src="./img/Search.png" alt="image" class="search__image" />
+                </a>
             </div>
-            </article>
-        </main>   
+        </header>
+
+        <main>
+            <section class="main-section">
+                <div class="architecture-aims">
+                    <div class="architecture-aims__number">01</div>
+                    <div class="architecture-aims__quote">
+                        <h5 class="architecture-aims-quote__author">John Doe</h5>
+                        <h1 class="architecture-aims-quote__text">Architecture <br />aims at eternity</h1>
+                    </div>
+                    <img src="./img/museum.png" alt="image" class="architecture-aims__image" />
+                    <div class="architecture-aims__page">
+                        <ul>
+                            <li class="architecture-aims-page__item">
+                                <a href="#01">01</a>
+                            </li>
+                            <li class="architecture-aims-page__item">
+                                <a href="#02">02</a>
+                            </li>
+                            <li class="architecture-aims-page__item">
+                                <a href="#03">03</a>
+                            </li>
+                            <li class="architecture-aims-page__item">
+                                <a href="#04">04</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
+
+<div class="architecture-ideas">
+    <div class="wrapper">
+        <h2 class="architecture-ideas_title">
+            Curabitur volutpat
+        </h2>
+        <p class="architecture-ideas_subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas vehicula
+            <br />
+            eros, et pellentesque justo ornare nec. Curabitur volutpat, quam in mollis luctus, enim risus <br />
+            libero, eu vehicula sapien nenc et tortor.<br />
+        </p>
+    </div>
+    <div class="create-idea">
+        <span>
+            <h1 class="create-idea_text">
+                We create<br />
+                cool ideas.
+            </h1>
+        </span>
+        <img src="./img/building.png" alt="image" class="building__image" />
+    </div>
+</div>
