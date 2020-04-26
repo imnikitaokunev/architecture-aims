@@ -162,10 +162,10 @@
 }
 
 .keywords .keywords__item {
-    justify-content: center;
-    align-items: center;
-    display: flex;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .keywords .keywords-item__image {
@@ -177,14 +177,97 @@
 }
 
 .keywords .selected .keywords-item__image img {
-    outline: 15px #97d1eb solid;
     outline-offset: -30px;
+    outline: 15px #97d1eb solid;
 }
 
 .keywords .keywords__item .keywords-item__title {
-    position: absolute;
+    color: #fff;
     font-size: 60px;
+    font-weight: bold;
+    position: absolute;
     font-family: "Raleway";
+}
+
+.howwework {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.howwework .howwework__image {
+    z-index: -1;
+}
+
+.howwework .howwework__image img {
+    width: 100%;
+}
+
+.howwework .howwework-content {
+    top: 100px;
+    position: absolute;
+    width: 100%;
+}
+
+.howwework .howwework-content .howwework-content__title {
+    font-size: 16px;
+    color: #97d1eb;
+    letter-spacing: 6px;
+    font-family: "Raleway";
+    text-align: center;
+}
+
+.howwework .howwework-content .howwework-content__title span {
+    /* display: inline-block; */
+    position: relative;
+}
+
+.howwework .howwework-content .howwework-content__title span:before,
+.howwework .howwework-content .howwework-content__title span:after {
+    content: "";
+    height: 10px;
+    width: 190px;
+    position: absolute;
+    border-bottom: 1px solid #97d1eb;
+}
+
+.howwework .howwework-content .howwework-content__title span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.howwework .howwework-content .howwework-content__title span:after {
+    /* left: 100%; */
+    margin-left: 15px;
+}
+
+.howwework .howwework-content .howwework-content__items {
+    justify-content: center;
+    display: flex;
+}
+
+.howwework .howwework-content .howwework-content__items .howwework-content__item {
+    width: 25%;
+    /* text-align: center;
+    position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__number {
+    font-size: 222px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: bold;
     color: #fff;
+    opacity: 0.5;
+    text-shadow: 10px 1px 50px gray;
+}
+
+.howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__text {
+    font-size: 60px;
+    color: #000;
+    font-weight: bold;
+    font-family: "Raleway";
+    position: absolute;
 }
