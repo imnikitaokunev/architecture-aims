@@ -50,13 +50,13 @@ howwework-section
 			howwework-content__item
 			howwework-content__item
 			howwework-content__item
-	latest-project-section
-		latest-project-section__title
-		latest-project-section__image
-		latest-project-section__description
+	latest-project-content
+		latest-project__title
+		latest-project__image
+		latest-project__description
 			description__title
 			description__content
-		latest-project-section__button
+		latest-project__button
 social-networks-section
 	social-networks-section__item
 	social-networks-section__item

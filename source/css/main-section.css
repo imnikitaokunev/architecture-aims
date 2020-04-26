@@ -190,7 +190,7 @@
 }
 
 .howwework {
-    display: flex;
+    /* display: flex; */
     position: relative;
     justify-content: center;
 }
@@ -209,21 +209,30 @@
     width: 100%;
 }
 
-.howwework .howwework-content .howwework-content__title {
+.howwework .howwework-content .howwework-content__title,
+.howwework .latest-project-content .latest-project__title {
+    text-transform: uppercase;
     font-size: 16px;
     color: #97d1eb;
     letter-spacing: 6px;
     font-family: "Raleway";
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
 }
 
-.howwework .howwework-content .howwework-content__title span {
+.howwework .howwework-content .howwework-content__title span,
+.howwework .latest-project-content .latest-project__title span {
     /* display: inline-block; */
     position: relative;
 }
 
 .howwework .howwework-content .howwework-content__title span:before,
-.howwework .howwework-content .howwework-content__title span:after {
+.howwework .howwework-content .howwework-content__title span:after,
+.howwework .latest-project-content .latest-project__title span:before,
+.howwework .latest-project-content .latest-project__title span:after {
     content: "";
     height: 10px;
     width: 190px;
@@ -231,12 +240,14 @@
     border-bottom: 1px solid #97d1eb;
 }
 
-.howwework .howwework-content .howwework-content__title span:before {
+.howwework .howwework-content .howwework-content__title span:before,
+.howwework .latest-project-content .latest-project__title span:before {
     right: 100%;
     margin-right: 15px;
 }
 
-.howwework .howwework-content .howwework-content__title span:after {
+.howwework .howwework-content .howwework-content__title span:after,
+.howwework .latest-project-content .latest-project__title span:after {
     /* left: 100%; */
     margin-left: 15px;
 }
@@ -271,3 +282,53 @@
     font-family: "Raleway";
     position: absolute;
 }
+
+.howwework .latest-project {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.howwework .latest-project .latest-project-content {
+    width: 75%;
+    position: relative;
+    background: #fff;
+}
+
+.howwework .latest-project .wrapper .latest-project__image {
+    left: -33%;
+}
+
+.howwework .latest-project .wrapper .latest-project__image img {
+    width: 66.67%;
+    position: relative;
+    left: -17.5%;
+}
+
+/* .howwework .latest-project {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.howwework .latest-project-content {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.howwework .latest-project-content .latest-project__image img {
+    width: 50%;
+}
+
+.howwework .latest-project-content .latest-project__title {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 222px;
+    background: #fff;
+} */
