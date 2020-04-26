@@ -23,26 +23,25 @@ architecture-aims
 		architecture-aims-page__item
 		architecture-aims-page__item
 		architecture-aims-page__item
-about-project
-	wrapper
-		about-project__title
-		about-project__subtitle
-	about-us
-		about-us__text
-		about-us__image
-section
-	section__item
-		secion-item__image
-		secion-item__title
-	section-item
-		secion-item__image
-		secion-item__title
-	section-item
-		secion-item__image
-		secion-item__title
-	section-item
-		secion-item__image
-		secion-item__title
+architecture-ideas
+	architecture-idea
+		architecture-idea__title
+		architecture-idea__subtitle
+	architecture-ideas__title
+	architecture-ideas__image
+keywords
+	keywords__item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
 how-we-work-section
 	how-we-work-section__title
 	how-we-work

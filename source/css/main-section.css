@@ -1,15 +1,15 @@
 .architecture-aims {
-    height: 70%;
     font-weight: bold;
-    font-family: "Raleway";
     position: relative;
+    font-family: "Raleway";
 }
 
 .architecture-aims .architecture-aims__image {
-    justify-content: flex-end;
-    display: flex;
+    z-index: -1;
     height: 100%;
-    position: relative;
+    display: flex;
+    /* position: relative; */
+    justify-content: flex-end;
 }
 
 .architecture-aims .architecture-aims__image img {
@@ -18,11 +18,11 @@
 
 .architecture-aims__content {
     top: 0;
+    left: 7%;
     height: 100%;
     display: flex;
-    margin-left: 7%;
-    align-items: center;
     position: absolute;
+    align-items: center;
 }
 
 .architecture-aims .architecture-aims__content .architecture-aims__slider {
@@ -74,9 +74,9 @@
 }
 
 .architecture-aims .architecture-aims__page {
-    position: absolute;
     bottom: 3%;
-    margin-left: 13.3%;
+    left: 13.3%;
+    position: absolute;
 }
 
 .architecture-aims .architecture-aims__page ul {
@@ -84,11 +84,11 @@
 }
 
 .architecture-aims .architecture-aims__page ul .architecture-aims-page__item {
-    font-size: 18px;
-    text-transform: lowercase;
-    padding: 7px 10px;
     margin: 0 5px;
+    font-size: 18px;
     transition: 300ms;
+    padding: 7px 10px;
+    text-transform: lowercase;
 }
 
 .architecture-aims .architecture-aims__page ul .architecture-aims-page__item a {
@@ -98,6 +98,93 @@
 
 .architecture-aims .architecture-aims__page ul .selected a,
 .architecture-aims .architecture-aims__page ul .architecture-aims-page__item a:hover {
-    text-decoration: line-through;
     color: #000;
+    text-decoration: line-through;
+}
+
+.architecture-ideas {
+    margin-top: 65px;
+    position: relative;
+}
+
+.architecture-ideas .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.architecture-ideas .wrapper .architecture-idea {
+    margin-left: 10%;
+    max-width: 700px;
+}
+
+.architecture-ideas .wrapper .architecture-idea .architecture-idea__title {
+    font-size: 72px;
+    color: #bcc0cd;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.architecture-ideas .wrapper .architecture-idea .architecture-idea__text {
+    font-size: 14px;
+    color: #9ca2b4;
+    padding-top: 44px;
+    line-height: 48px;
+    font-family: "Montserrat";
+}
+
+.architecture-ideas .wrapper .architecture-ideas__title {
+    font-size: 92px;
+    max-width: 500px;
+    font-weight: bold;
+    margin-right: 18%;
+    font-family: "Raleway";
+}
+
+.architecture-ideas .architecture-ideas__image {
+    z-index: -1;
+    height: 100%;
+    display: flex;
+    /* position: relative; */
+    justify-content: flex-end;
+}
+
+.architecture-ideas .architecture-ideas__image img {
+    width: 33.15%;
+}
+
+.keywords {
+    display: flex;
+    margin-top: 133px;
+}
+
+.keywords .keywords__item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.keywords .keywords-item__image {
+    display: contents;
+}
+
+.keywords .keywords__item .keywords-item__image img {
+    width: 100%;
+}
+
+.keywords .selected .keywords-item__image img {
+    outline: 15px #97d1eb solid;
+    outline-offset: -30px;
+}
+
+.keywords .keywords__item .keywords-item__title {
+    position: absolute;
+    font-size: 60px;
+    font-family: "Raleway";
+    font-weight: bold;
+    color: #fff;
 }
