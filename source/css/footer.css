@@ -1,0 +1,28 @@
+.footer {
+    top: 100px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0f0f0f;
+}
+
+.footer .footer__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer__image img {
+    width: 6%;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #5d5d5d;
+    font-weight: normal;
+    font-family: "Raleway";
+}

@@ -48,22 +48,31 @@ howwework-section
 		howwework-content__title
 		howwework-content__items
 			howwework-content__item
+				howwework-content-item__number
+				howwework-content-item__text
 			howwework-content__item
+				howwework-content-item__number
+				howwework-content-item__text
 			howwework-content__item
-	latest-project-content
-		latest-project__title
-		latest-project__image
-		latest-project__description
-			description__title
-			description__content
-		latest-project__button
+				howwework-content-item__number
+				howwework-content-item__text
+	latest-project
+		latest-project-content
+			latest-project__title
+			wrapper
+				latest-project__image
+				latest-project__description
+					description__title
+					description__content
+				latest-project__button
 social-networks-section
-	social-networks-section__item
-	social-networks-section__item
-	social-networks-section__item
-	social-networks-section__item
-	social-networks-section__item
-	social-networks-section__item
+	social-networks__items
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
 contact-us-section
 	contact-us-section__image
 	contact-us-section__form
@@ -77,9 +86,8 @@ contact-us-section
 		contact-us-section-form__input
 		contact-us-section-form__input
 		contact-us-section-form__button
-footer-section
-	footer-section__image
-	footer-section__title
+footer
+	footer__image
 	copyright
 	
 		

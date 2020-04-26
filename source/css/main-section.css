@@ -8,7 +8,6 @@
     z-index: -1;
     height: 100%;
     display: flex;
-    /* position: relative; */
     justify-content: flex-end;
 }
 
@@ -148,7 +147,6 @@
     z-index: -1;
     height: 100%;
     display: flex;
-    /* position: relative; */
     justify-content: flex-end;
 }
 
@@ -190,7 +188,6 @@
 }
 
 .howwework {
-    /* display: flex; */
     position: relative;
     justify-content: center;
 }
@@ -204,7 +201,7 @@
 }
 
 .howwework .howwework-content {
-    top: 100px;
+    top: 0;
     position: absolute;
     width: 100%;
 }
@@ -215,17 +212,15 @@
     font-size: 16px;
     color: #97d1eb;
     letter-spacing: 6px;
+    height: 100px;
     font-family: "Raleway";
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 200px; */
 }
 
 .howwework .howwework-content .howwework-content__title span,
 .howwework .latest-project-content .latest-project__title span {
-    /* display: inline-block; */
     position: relative;
 }
 
@@ -248,87 +243,251 @@
 
 .howwework .howwework-content .howwework-content__title span:after,
 .howwework .latest-project-content .latest-project__title span:after {
-    /* left: 100%; */
     margin-left: 15px;
 }
 
 .howwework .howwework-content .howwework-content__items {
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 .howwework .howwework-content .howwework-content__items .howwework-content__item {
     width: 25%;
-    /* text-align: center;
-    position: relative; */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__number {
-    font-size: 222px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    color: #fff;
     opacity: 0.5;
+    color: #fff;
+    font-size: 222px;
+    font-weight: bold;
+    line-height: 160px;
     text-shadow: 10px 1px 50px gray;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__text {
-    font-size: 60px;
     color: #000;
+    font-size: 60px;
     font-weight: bold;
-    font-family: "Raleway";
     position: absolute;
+    font-family: "Raleway";
 }
 
 .howwework .latest-project {
-    position: absolute;
     bottom: 0;
-    display: flex;
     width: 100%;
+    display: flex;
+    position: absolute;
     justify-content: center;
 }
 
 .howwework .latest-project .latest-project-content {
     width: 75%;
+    bottom: -35px;
     position: relative;
     background: #fff;
+}
+
+.howwework .latest-project .wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .howwework .latest-project .wrapper .latest-project__image {
     left: -33%;
+    display: contents;
 }
 
 .howwework .latest-project .wrapper .latest-project__image img {
     width: 66.67%;
+    left: -16.67%;
     position: relative;
-    left: -17.5%;
 }
 
-/* .howwework .latest-project {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-.howwework .latest-project-content {
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-.howwework .latest-project-content .latest-project__image img {
-    width: 50%;
-}
-
-.howwework .latest-project-content .latest-project__title {
-    width: 75%;
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description {
+    right: 0;
+    top: auto;
     display: flex;
+    max-width: 40%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__text {
+    font-size: 14px;
+    color: #9ca2b4;
+    line-height: 48px;
+    font-family: "Montserrat";
+}
+
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__button {
+    width: 184px;
+    height: 51px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #9ca2b4;
+    font-weight: bold;
+    background-color: #fff;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    border: 1px solid #e9ecf2;
+}
+
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__button:hover {
+    color: #97d1eb;
+}
+
+.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__number {
+    right: -25%;
+    opacity: 0.05;
+    color: #000;
+    font-size: 489px;
+    font-weight: bold;
+    position: absolute;
+    font-family: "Raleway";
+}
+
+.social-networks {
+    top: 130px;
+    position: relative;
+}
+
+.social-networks hr {
+    margin: 0 100px;
+    border-top: 1px solid #eff1f5;
+}
+
+.social-networks .social-networks-items {
+    display: flex;
+    margin-top: 85px;
     align-items: center;
     justify-content: center;
-    height: 222px;
-    background: #fff;
-} */
+}
+
+.social-networks .social-networks-items .social-networks__item {
+    width: 12.5%;
+    text-align: center;
+}
+
+.contactus {
+    top: 250px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.contactus .contactus__image {
+    display: flex;
+    margin-right: 12.5%;
+    justify-content: flex-end;
+}
+
+.contactus .contactus__image img {
+    width: 35%;
+}
+
+.contactus .wrapper {
+    top: 100px;
+    height: 70%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.contactus .contactus__form {
+    top: 0;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    margin-left: 12.5%;
+    outline-offset: -45px;
+    outline: 15px #97d1eb solid;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__items {
+    display: flex;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #bcc0cd;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 2px;
+    letter-spacing: 2.5px;
+    font-family: "Raleway";
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__items .selected,
+.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item:hover {
+    color: #97d1eb;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__items .selected {
+    border-bottom: 1px solid #c1e3f3;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item:focus {
+    outline: none;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__inputs {
+    height: 100%;
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input input,
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input textarea {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    font-family: "Raleway";
+    border-bottom: 1px solid #eeeff2;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-primary input {
+    font-size: 36px;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-secondary textarea {
+    font-size: 24px;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input input::placeholder,
+.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input textarea::placeholder {
+    color: #e6e7ec;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__button {
+    bottom: 0;
+    width: 184px;
+    height: 51px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #9ca2b4;
+    font-weight: bold;
+    position: absolute;
+    align-self: center;
+    background-color: #fff;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    border: 1px solid #e9ecf2;
+}
+
+.contactus .contactus__form .wrapper .contactus-form__button:hover {
+    color: #97d1eb;
+}
