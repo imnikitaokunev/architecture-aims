@@ -5,14 +5,13 @@
 }
 
 .architecture-aims .architecture-aims__image {
-    z-index: -1;
     height: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .architecture-aims .architecture-aims__image img {
-    width: 70.5%;
+    width: 70%;
 }
 
 .architecture-aims__content {
@@ -151,30 +150,31 @@
 }
 
 .architecture-ideas .architecture-ideas__image img {
-    width: 33.15%;
+    width: 33.33%;
 }
 
 .keywords {
+    position: relative;
     display: flex;
     margin-top: 133px;
 }
 
 .keywords .keywords__item {
-    width: 100%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .keywords .keywords-item__image {
-    display: contents;
+    width: 100%;
 }
 
 .keywords .keywords__item .keywords-item__image img {
     width: 100%;
 }
 
-.keywords .selected .keywords-item__image img {
+.keywords .keywords__item:hover {
     outline-offset: -30px;
     outline: 15px #97d1eb solid;
 }
@@ -190,29 +190,23 @@
 .howwework {
     position: relative;
     justify-content: center;
-}
-
-.howwework .howwework__image {
-    z-index: -1;
-}
-
-.howwework .howwework__image img {
-    width: 100%;
+    background: url("/img/howwework.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .howwework .howwework-content {
     top: 0;
-    position: absolute;
     width: 100%;
 }
 
 .howwework .howwework-content .howwework-content__title,
 .howwework .latest-project-content .latest-project__title {
+    height: 200px;
+    color: white;
     text-transform: uppercase;
     font-size: 16px;
     color: #97d1eb;
     letter-spacing: 6px;
-    height: 100px;
     font-family: "Raleway";
     display: flex;
     justify-content: center;
@@ -247,6 +241,7 @@
 }
 
 .howwework .howwework-content .howwework-content__items {
+    height: 13vh;
     display: flex;
     justify-content: center;
 }
@@ -280,7 +275,6 @@
     bottom: 0;
     width: 100%;
     display: flex;
-    position: absolute;
     justify-content: center;
 }
 
@@ -358,7 +352,7 @@
 }
 
 .social-networks {
-    top: 130px;
+    margin-top: 130px;
     position: relative;
 }
 
@@ -380,36 +374,26 @@
 }
 
 .contactus {
-    top: 250px;
-    position: relative;
-    margin-bottom: 200px;
-}
-
-.contactus .contactus__image {
     display: flex;
-    margin-right: 12.5%;
-    justify-content: flex-end;
-}
-
-.contactus .contactus__image img {
-    width: 35%;
-}
-
-.contactus .wrapper {
-    top: 100px;
-    height: 70%;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    max-width: 1024px;
+    height: 700px;
     position: relative;
+}
+
+.contactus__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    outline: 15px solid #97d1eb;
+    outline-offset: -40px;
 }
 
 .contactus .contactus__form {
-    top: 0;
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    margin-left: 12.5%;
-    outline-offset: -45px;
-    outline: 15px #97d1eb solid;
+    width: 100%;
+    padding: 80px 0 0 80px;
 }
 
 .contactus .contactus__form .wrapper .contactus-form__items {
@@ -446,17 +430,23 @@
 .contactus .contactus__form .wrapper .contactus-form__inputs {
     height: 100%;
     display: flex;
-    max-width: 50%;
+    max-width: 90%;
     flex-direction: column;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input input,
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input textarea {
+.contactus-form__input input,
+.contactus-form__input textarea {
     width: 100%;
     border: none;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: "Raleway";
     border-bottom: 1px solid #eeeff2;
+}
+
+.contactus-form__input input:focus,
+.contactus-form__input textarea:focus {
+    outline: none;
+    caret-color: #97d1eb;
 }
 
 .contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-primary input {
@@ -465,6 +455,8 @@
 
 .contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-secondary textarea {
     font-size: 24px;
+    resize: vertical;
+    max-height: 240px;
 }
 
 .contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input input::placeholder,
@@ -473,14 +465,12 @@
 }
 
 .contactus .contactus__form .wrapper .contactus-form__button {
-    bottom: 0;
     width: 184px;
     height: 51px;
     cursor: pointer;
     font-size: 14px;
     color: #9ca2b4;
     font-weight: bold;
-    position: absolute;
     align-self: center;
     background-color: #fff;
     font-family: "Montserrat";
@@ -490,4 +480,8 @@
 
 .contactus .contactus__form .wrapper .contactus-form__button:hover {
     color: #97d1eb;
+}
+
+.contactus .contactus__image img {
+    height: 700px;
 }

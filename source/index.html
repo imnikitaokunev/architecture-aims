@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <header class="header">
+        <header class="header" id="home">
             <div class="header__logo">
                 <a href="#"><img src="./img/logo.png" alt="image" class="logo__image" /></a>
             </div>
@@ -24,7 +24,7 @@
                         <a href="#home">home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#about_us">about us</a>
+                        <a href="#about-us">about us</a>
                     </li>
                     <li class="menu__item">
                         <a href="#projects">projects</a>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="architecture-aims__quote">
                         <div class="architecture-aims-quote__author">John Doe</div>
-                        <div class="architecture-aims-quote__text">Architecture aims at eternity</div>
+                        <h1 class="architecture-aims-quote__text">Architecture aims at eternity</h1>
                     </div>
                 </div>
                 <div class="architecture-aims__page">
@@ -84,17 +84,17 @@
                     </ul>
                 </div>
             </section>
-            <section class="architecture-ideas">
+            <section class="architecture-ideas" id="about-us">
                 <div class="wrapper">
                     <div class="architecture-idea">
-                        <div class="architecture-idea__title">Curabitur volutpat</div>
+                        <h2 class="architecture-idea__title">Curabitur volutpat</h2>
                         <p class="architecture-idea__text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas
                             vehicula eros, et pellentesque justo ornare nec. Curabitur volutpat, quam in mollis luctus,
                             enim risus libero, eu vehicula sapien nenc et tortor.
                         </p>
                     </div>
-                    <div class="architecture-ideas__title">We create cool ideas.</div>
+                    <h1 class="architecture-ideas__title">We create cool ideas.</h1>
                 </div>
                 <div class="architecture-ideas__image">
                     <img src="./img/building.png" alt="Building" />
@@ -105,31 +105,28 @@
                     <div class="keywords-item__image">
                         <img src="img/idea.png" alt="Idea" />
                     </div>
-                    <div class="keywords-item__title">Idea.</div>
+                    <h3 class="keywords-item__title">Idea.</h3>
                 </div>
                 <div class="keywords__item selected">
                     <div class="keywords-item__image">
                         <img src="img/concept.png" alt="Concept" />
                     </div>
-                    <div class="keywords-item__title">Concept.</div>
+                    <h3 class="keywords-item__title">Concept.</h3>
                 </div>
                 <div class="keywords__item">
                     <div class="keywords-item__image">
                         <img src="img/design.png" alt="Design" />
-                        <div class="keywords-item__title">Design.</div>
                     </div>
+                    <h3 class="keywords-item__title">Design.</h3>
                 </div>
                 <div class="keywords__item">
                     <div class="keywords-item__image">
                         <img src="img/develop.png" alt="Develop" />
-                        <div class="keywords-item__title">Develop.</div>
                     </div>
+                    <h3 class="keywords-item__title">Develop.</h3>
                 </div>
             </section>
-            <section class="howwework">
-                <div class="howwework__image">
-                    <img src="./img/howwework.png" alt="How we work" />
-                </div>
+            <section class="howwework" id="clients">
                 <div class="howwework-content">
                     <div class="howwework-content__title">
                         <span>How we work</span>
@@ -149,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="latest-project">
+                <div class="latest-project" id="projects">
                     <div class="latest-project-content">
                         <div class="latest-project__title"><span>Latest project</span></div>
                         <div class="wrapper">
@@ -157,9 +154,9 @@
                                 <img src="./img/latest-project.png" alt="Latest project" />
                             </div>
                             <div class="latest-project__description">
-                                <div class="description__title">
+                                <h1 class="description__title">
                                     Modern Art Gallery Warsaw Poland
-                                </div>
+                                </h1>
                                 <div class="description__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum voluptatem animi
                                     vitae, amet accusamus. Nostrum vitae voluptates, at corrupti repellat rem temporibus
@@ -176,55 +173,57 @@
                     </div>
                 </div>
             </section>
-            <section class="social-networks">
+            <section class="social-networks" id="blog">
                 <hr />
-                <div class="social-networks-items">
-                    <div class="social-networks__item">
+                <ul class="social-networks-items">
+                    <li class="social-networks__item">
                         <a href="#zeus"><img src="./img/zeus.png" alt="Zeus" /></a>
-                    </div>
-                    <div class="social-networks__item">
+                    </li>
+                    <li class="social-networks__item">
                         <a href="#pinterest"><img src="./img/pinterest.png" alt="Pinterest" /></a>
-                    </div>
-                    <div class="social-networks__item">
+                    </li>
+                    <li class="social-networks__item">
                         <a href="#gratia"><img src="./img/gratia.png" alt="Gratia" /></a>
-                    </div>
-                    <div class="social-networks__item">
+                    </li>
+                    <li class="social-networks__item">
                         <a href="#e"><img src="./img/e.png" alt="E" /></a>
-                    </div>
-                    <div class="social-networks__item">
+                    </li>
+                    <li class="social-networks__item">
                         <a href="#luna"><img src="./img/luna.png" alt="Luna" /></a>
-                    </div>
-                    <div class="social-networks__item">
+                    </li>
+                    <li class="social-networks__item">
                         <a href="#n"><img src="./img/n.png" alt="N" /></a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </section>
-            <section class="contactus">
-                <div class="contactus__image">
-                    <img src="img/glass-building.png" alt="Contact us" />
-                </div>
-                <div class="contactus__form">
-                    <div class="wrapper">
-                        <div class="contactus-form__items">
-                            <button class="contactus-form__item selected">Contact us</button>
-                            <button class="contactus-form__item">Phone</button>
-                            <button class="contactus-form__item">E-mail</button>
+            <section class="contactus" id="contact">
+                <div class="contactus__content">
+                    <div class="contactus__form">
+                        <div class="wrapper">
+                            <div class="contactus-form__items">
+                                <button class="contactus-form__item selected">Contact us</button>
+                                <button class="contactus-form__item">Phone</button>
+                                <button class="contactus-form__item">E-mail</button>
+                            </div>
+                            <div class="contactus-form__inputs">
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="Name" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="Phone" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="E-mail" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-secondary">
+                                    <textarea placeholder="Message" rows="3"></textarea>
+                                </div>
+                                <button class="contactus-form__button">Send</button>
+                            </div>
                         </div>
-                        <div class="contactus-form__inputs">
-                            <div class="contactus-form__input contactus-form__input-primary">
-                                <input placeholder="Name" />
-                            </div>
-                            <div class="contactus-form__input contactus-form__input-primary">
-                                <input placeholder="Phone" />
-                            </div>
-                            <div class="contactus-form__input contactus-form__input-primary">
-                                <input placeholder="E-mail" />
-                            </div>
-                            <div class="contactus-form__input contactus-form__input-secondary">
-                                <textarea placeholder="Message" rows="3"></textarea>
-                            </div>
-                            <button class="contactus-form__button">Send</button>
-                        </div>
+                    </div>
+                    <div class="contactus__image">
+                        <img src="img/glass-building.png" alt="Contact us" />
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 .footer {
-    top: 100px;
+    margin-top: 80px;
     height: 200px;
     display: flex;
     position: relative;
@@ -9,17 +9,13 @@
     background-color: #0f0f0f;
 }
 
-.footer .footer__image {
+.footer__image {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.footer .footer__image img {
-    width: 6%;
-}
-
-.footer .copyright {
+.copyright {
     font-size: 14px;
     margin-top: 15px;
     color: #5d5d5d;
