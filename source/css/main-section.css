@@ -1,16 +1,22 @@
+main {
+    min-width: 320px;
+}
+
+/*#region architecture-aims */
 .architecture-aims {
+    overflow: hidden;
     font-weight: bold;
     position: relative;
     font-family: "Raleway";
 }
 
-.architecture-aims .architecture-aims__image {
+.architecture-aims__image {
     height: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.architecture-aims .architecture-aims__image img {
+.architecture-aims__image img {
     width: 70%;
 }
 
@@ -23,15 +29,13 @@
     align-items: center;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__slider {
+.architecture-aims__slider {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__slider .architecture-aims-slider__button {
-    width: 72px;
-    height: 73px;
+.architecture-aims-slider__button {
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -40,11 +44,12 @@
     border: 1px solid #eff1f5;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__slider .architecture-aims-slider__number {
-    width: 193px;
-    height: 193px;
+.architecture-aims-slider__button:focus {
+    outline: 1px solid #97d1eb;
+}
+
+.architecture-aims-slider__number {
     display: flex;
-    font-size: 72px;
     color: #ffffff;
     text-align: center;
     align-items: center;
@@ -52,36 +57,49 @@
     justify-content: center;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__quote {
+.architecture-aims__quote {
     max-width: 800px;
     margin-left: 4.7%;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__author {
-    font-size: 18px;
+.architecture-aims-quote__author {
     font-weight: 400;
     color: #bcc0cd;
 }
 
-.architecture-aims .architecture-aims__content .architecture-aims__quote .architecture-aims-quote__text {
+.architecture-aims-quote__title {
     color: #000;
-    font-size: 92px;
-    margin-top: 40px;
-    padding-bottom: 47px;
-    border-bottom: 15px solid #97d1eb;
 }
 
-.architecture-aims .architecture-aims__page {
+.slidein {
+    font-size: 100%;
+    animation-duration: 0.4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 300%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.architecture-aims__page {
     bottom: 3%;
     left: 13.3%;
     position: absolute;
 }
 
-.architecture-aims .architecture-aims__page ul {
+.architecture-aims__page ul {
     display: flex;
 }
 
-.architecture-aims .architecture-aims__page ul .architecture-aims-page__item {
+.architecture-aims__page ul .architecture-aims-page__item {
     margin: 0 5px;
     font-size: 18px;
     transition: 300ms;
@@ -89,19 +107,31 @@
     text-transform: lowercase;
 }
 
-.architecture-aims .architecture-aims__page ul .architecture-aims-page__item a {
+.architecture-aims__page ul .architecture-aims-page__item button {
+    font-size: 18px;
+    font-family: "Raleway";
+    background: none;
+    border: none;
+    cursor: pointer;
     color: #e8e8e8;
     text-decoration: none;
 }
 
-.architecture-aims .architecture-aims__page ul .selected a,
-.architecture-aims .architecture-aims__page ul .architecture-aims-page__item a:hover {
+.architecture-aims__page ul .selected button,
+.architecture-aims__page ul .architecture-aims-page__item button:hover {
     color: #000;
     text-decoration: line-through;
 }
 
+.architecture-aims__page ul .architecture-aims-page__item button:focus {
+    outline: none;
+}
+
+/*#endregion architecture-aims */
+
+/*#region architecture-ideas */
+
 .architecture-ideas {
-    margin-top: 65px;
     position: relative;
 }
 
@@ -109,83 +139,80 @@
     width: 100%;
     height: 100%;
     display: flex;
-    position: absolute;
     align-items: center;
     justify-content: space-between;
 }
 
-.architecture-ideas .wrapper .architecture-idea {
+.architecture-idea {
     margin-left: 10%;
     max-width: 700px;
 }
 
-.architecture-ideas .wrapper .architecture-idea .architecture-idea__title {
-    font-size: 72px;
+.architecture-idea__title {
     color: #bcc0cd;
     font-weight: bold;
     font-family: "Raleway";
 }
 
-.architecture-ideas .wrapper .architecture-idea .architecture-idea__text {
-    font-size: 14px;
+.architecture-idea__text {
     color: #9ca2b4;
-    padding-top: 44px;
-    line-height: 48px;
     font-family: "Montserrat";
 }
 
-.architecture-ideas .wrapper .architecture-ideas__title {
-    font-size: 92px;
+.architecture-ideas__title {
     max-width: 500px;
     font-weight: bold;
-    margin-right: 18%;
     font-family: "Raleway";
 }
 
-.architecture-ideas .architecture-ideas__image {
+.architecture-ideas__image {
     z-index: -1;
-    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.architecture-ideas .architecture-ideas__image img {
+.architecture-ideas__image img {
     width: 33.33%;
 }
+
+/*#endregion architecture-ideas */
+
+/*#region keywords */
 
 .keywords {
     position: relative;
     display: flex;
-    margin-top: 133px;
 }
 
-.keywords .keywords__item {
+.keywords__item {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.keywords .keywords-item__image {
+.keywords-item__image {
     width: 100%;
 }
 
-.keywords .keywords__item .keywords-item__image img {
+.keywords-item__image img {
     width: 100%;
 }
 
-.keywords .keywords__item:hover {
-    outline-offset: -30px;
-    outline: 15px #97d1eb solid;
-}
-
-.keywords .keywords__item .keywords-item__title {
+.keywords-item__title {
     color: #fff;
-    font-size: 60px;
     font-weight: bold;
     position: absolute;
     font-family: "Raleway";
 }
+
+/*#endregion keywords */
+
+/*#region howwework */
 
 .howwework {
     position: relative;
@@ -199,9 +226,8 @@
     width: 100%;
 }
 
-.howwework .howwework-content .howwework-content__title,
-.howwework .latest-project-content .latest-project__title {
-    height: 200px;
+.howwework-content__title,
+.latest-project__title {
     color: white;
     text-transform: uppercase;
     font-size: 16px;
@@ -213,121 +239,110 @@
     align-items: center;
 }
 
-.howwework .howwework-content .howwework-content__title span,
-.howwework .latest-project-content .latest-project__title span {
+.howwework-content__title span,
+.latest-project__title span {
     position: relative;
 }
 
-.howwework .howwework-content .howwework-content__title span:before,
-.howwework .howwework-content .howwework-content__title span:after,
-.howwework .latest-project-content .latest-project__title span:before,
-.howwework .latest-project-content .latest-project__title span:after {
-    content: "";
-    height: 10px;
-    width: 190px;
-    position: absolute;
-    border-bottom: 1px solid #97d1eb;
-}
-
-.howwework .howwework-content .howwework-content__title span:before,
-.howwework .latest-project-content .latest-project__title span:before {
+.howwework-content__title span:before,
+.latest-project__title span:before {
     right: 100%;
     margin-right: 15px;
 }
 
-.howwework .howwework-content .howwework-content__title span:after,
-.howwework .latest-project-content .latest-project__title span:after {
+.howwework-content__title span:after,
+.latest-project__title span:after {
     margin-left: 15px;
 }
 
-.howwework .howwework-content .howwework-content__items {
+.howwework-content__title span:before,
+.howwework-content__title span:after,
+.latest-project__title span:before,
+.latest-project__title span:after {
+    content: "";
+    height: 10px;
+    position: absolute;
+    border-bottom: 1px solid #97d1eb;
+}
+
+.howwework-content__items {
     height: 13vh;
     display: flex;
     justify-content: center;
 }
 
-.howwework .howwework-content .howwework-content__items .howwework-content__item {
+.howwework-content__item {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__number {
+.howwework-content-item__number {
     opacity: 0.5;
     color: #fff;
-    font-size: 222px;
     font-weight: bold;
     line-height: 160px;
     text-shadow: 10px 1px 50px gray;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.howwework .howwework-content .howwework-content__items .howwework-content__item .howwework-content-item__text {
+.howwework-content-item__text {
     color: #000;
-    font-size: 60px;
     font-weight: bold;
     position: absolute;
     font-family: "Raleway";
 }
 
 .howwework .latest-project {
-    bottom: 0;
     width: 100%;
-    display: flex;
     justify-content: center;
 }
 
-.howwework .latest-project .latest-project-content {
+.latest-project-content {
     width: 75%;
-    bottom: -35px;
+    margin: 35px auto 0 auto;
     position: relative;
     background: #fff;
 }
 
 .howwework .latest-project .wrapper {
+    width: 87.5%;
+    background: white;
     display: flex;
-    align-items: center;
 }
 
-.howwework .latest-project .wrapper .latest-project__image {
-    left: -33%;
-    display: contents;
+.latest-project__image {
+    width: 57%;
 }
 
-.howwework .latest-project .wrapper .latest-project__image img {
-    width: 66.67%;
-    left: -16.67%;
+.latest-project__image img {
+    width: 100%;
     position: relative;
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description {
-    right: 0;
-    top: auto;
+.latest-project__description {
+    background: white;
     display: flex;
-    max-width: 40%;
-    position: absolute;
+    width: 43%;
     flex-direction: column;
     justify-content: center;
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__title {
-    font-size: 48px;
+.description__title {
+    margin: 0 10%;
     font-weight: bold;
     font-family: "Raleway";
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__text {
-    font-size: 14px;
+.description__text {
+    margin: 0 10%;
     color: #9ca2b4;
-    line-height: 48px;
     font-family: "Montserrat";
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__button {
-    width: 184px;
-    height: 51px;
-    font-size: 14px;
+.description__button {
+    margin: 0 10%;
     cursor: pointer;
     color: #9ca2b4;
     font-weight: bold;
@@ -337,41 +352,49 @@
     border: 1px solid #e9ecf2;
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__button:hover {
+.description__button:hover {
     color: #97d1eb;
 }
 
-.howwework .latest-project .latest-project-content .wrapper .latest-project__description .description__number {
-    right: -25%;
+.description__number {
+    bottom: 0;
+    right: 10%;
     opacity: 0.05;
     color: #000;
-    font-size: 489px;
     font-weight: bold;
     position: absolute;
     font-family: "Raleway";
 }
 
-.social-networks {
-    margin-top: 130px;
-    position: relative;
+/*#endregion howwework */
+
+/*#region social-networks */
+
+.social-networks__title {
+    display: none;
 }
 
 .social-networks hr {
-    margin: 0 100px;
     border-top: 1px solid #eff1f5;
 }
 
-.social-networks .social-networks-items {
+.social-networks-items {
+    flex-wrap: wrap;
+    width: 75%;
     display: flex;
     margin-top: 85px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
-.social-networks .social-networks-items .social-networks__item {
-    width: 12.5%;
+.social-networks__item {
     text-align: center;
 }
+
+/*#endregion social-networks */
+
+/*#region contactus */
 
 .contactus {
     display: flex;
@@ -379,28 +402,29 @@
     margin-right: auto;
     margin-top: 120px;
     max-width: 1024px;
-    height: 700px;
+    height: 630px;
     position: relative;
+}
+
+.contactus__title {
+    display: none;
 }
 
 .contactus__content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    outline: 15px solid #97d1eb;
-    outline-offset: -40px;
 }
 
-.contactus .contactus__form {
+.contactus__form {
     width: 100%;
-    padding: 80px 0 0 80px;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__items {
+.contactus-form__items {
     display: flex;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item {
+.contactus-form__item {
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -414,20 +438,20 @@
     text-transform: uppercase;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__items .selected,
-.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item:hover {
+.contactus-form__items .selected,
+.contactus-form__items .contactus-form__item:hover {
     color: #97d1eb;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__items .selected {
+.contactus-form__items .selected {
     border-bottom: 1px solid #c1e3f3;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__items .contactus-form__item:focus {
+.contactus-form__item:focus {
     outline: none;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__inputs {
+.contactus-form__inputs {
     height: 100%;
     display: flex;
     max-width: 90%;
@@ -449,22 +473,23 @@
     caret-color: #97d1eb;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-primary input {
+.contactus-form__input-primary input {
     font-size: 36px;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input-secondary textarea {
+.contactus-form__input-secondary textarea {
     font-size: 24px;
     resize: vertical;
-    max-height: 240px;
+    height: 160px;
+    max-height: 160px;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input input::placeholder,
-.contactus .contactus__form .wrapper .contactus-form__inputs .contactus-form__input textarea::placeholder {
+.contactus-form__input input::placeholder,
+.contactus-form__input textarea::placeholder {
     color: #e6e7ec;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__button {
+.contactus-form__button {
     width: 184px;
     height: 51px;
     cursor: pointer;
@@ -478,10 +503,681 @@
     border: 1px solid #e9ecf2;
 }
 
-.contactus .contactus__form .wrapper .contactus-form__button:hover {
+.contactus-form__button:hover {
     color: #97d1eb;
 }
 
 .contactus .contactus__image img {
-    height: 700px;
+    height: 630px;
+}
+
+/*#endregion contactus */
+
+@media (max-width: 480px) {
+    .mobile-menu__items {
+        height: 100vh;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .menu-toggle {
+        margin-left: 20px;
+    }
+
+    .architecture-aims-quote__title {
+        font-size: 22px;
+        margin-top: 12px;
+        padding-bottom: 3px;
+        border-bottom: 4px solid #97d1eb;
+    }
+
+    .architecture-aims-quote__author {
+        font-size: 10px;
+    }
+
+    .architecture-aims-slider__number {
+        width: 48px;
+        height: 48px;
+    }
+
+    .architecture-aims-slider__button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .architecture-aims__page {
+        display: none;
+    }
+
+    .architecture-ideas__title {
+        font-size: 20px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 10%;
+    }
+
+    .architecture-idea__title {
+        font-size: 16px;
+    }
+
+    .architecture-idea__text {
+        font-size: 6px;
+        padding-top: 16px;
+        line-height: 16px;
+    }
+
+    .keywords-item__title {
+        font-size: 14px;
+    }
+
+    .keywords .keywords__item:hover {
+        outline-offset: -10px;
+        outline: 5px #97d1eb solid;
+    }
+
+    .keywords {
+        margin-top: 30px;
+    }
+
+    .architecture-ideas {
+        margin-top: 20px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        height: 50px;
+    }
+
+    .howwework-content-item__number {
+        font-size: 80px;
+    }
+
+    .howwework-content-item__text {
+        font-size: 18px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        font-size: 10px;
+    }
+
+    .howwework-content__title span:before,
+    .howwework-content__title span:after,
+    .latest-project__title span:before,
+    .latest-project__title span:after {
+        width: 50px;
+    }
+
+    .description__title {
+        font-size: 11px;
+    }
+
+    .description__text {
+        font-size: 5px;
+    }
+
+    .description__number {
+        font-size: 100px;
+    }
+
+    .description__button {
+        width: 80px;
+        height: 18px;
+        font-size: 5px;
+    }
+
+    .social-networks {
+        margin-top: 10px;
+    }
+
+    .social-networks hr {
+        margin: 20px 40px;
+    }
+
+    .social-networks__item img {
+        width: 50%;
+    }
+
+    .contactus__image {
+        display: none;
+    }
+
+    .contactus__content {
+        outline: 10px solid #97d1eb;
+        outline-offset: -10px;
+    }
+
+    .contactus__form {
+        padding: 10px 0 0 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    .header {
+        height: 100px;
+    }
+
+    .mobile-menu__items {
+        height: 100vh;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .menu-toggle {
+        margin-left: 40px;
+    }
+
+    .architecture-aims-quote__title {
+        font-size: 32px;
+        margin-top: 16px;
+        padding-bottom: 10px;
+        border-bottom: 6px solid #97d1eb;
+    }
+
+    .architecture-aims-quote__author {
+        font-size: 12px;
+    }
+
+    .architecture-aims-slider__number {
+        width: 86px;
+        height: 86px;
+        font-size: 32px;
+    }
+
+    .architecture-aims-slider__button {
+        width: 32px;
+        height: 32px;
+        font-size: 10px;
+    }
+
+    .architecture-aims__page {
+        display: block;
+    }
+
+    .architecture-ideas__title {
+        font-size: 32px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 10%;
+    }
+
+    .architecture-idea__title {
+        font-size: 28px;
+    }
+
+    .architecture-idea__text {
+        font-size: 14px;
+        padding-top: 16px;
+        line-height: 16px;
+    }
+
+    .keywords-item__title {
+        font-size: 26px;
+    }
+
+    .keywords .keywords__item:hover {
+        outline-offset: -12px;
+        outline: 6px #97d1eb solid;
+    }
+
+    .keywords {
+        margin-top: 70px;
+    }
+
+    .architecture-ideas {
+        margin-top: 50px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        height: 60px;
+    }
+
+    .howwework-content-item__number {
+        font-size: 120px;
+    }
+
+    .howwework-content-item__text {
+        font-size: 20px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        font-size: 10px;
+    }
+
+    .howwework-content__title span:before,
+    .howwework-content__title span:after,
+    .latest-project__title span:before,
+    .latest-project__title span:after {
+        width: 120px;
+    }
+
+    .description__title {
+        font-size: 16px;
+    }
+
+    .description__text {
+        font-size: 8px;
+    }
+
+    .description__number {
+        font-size: 150px;
+    }
+
+    .description__button {
+        width: 100px;
+        height: 34px;
+        font-size: 8px;
+    }
+
+    .social-networks {
+        margin-top: 10px;
+    }
+
+    .social-networks hr {
+        margin: 25px 40px;
+    }
+
+    .social-networks__item img {
+        width: 60%;
+    }
+
+    .contactus__image {
+        display: none;
+    }
+
+    .contactus__content {
+        outline: 10px solid #97d1eb;
+        outline-offset: -30px;
+    }
+
+    .contactus__form {
+        padding: 50px 0 0 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .architecture-aims-quote__title {
+        font-size: 48px;
+        margin-top: 24px;
+        padding-bottom: 20px;
+        border-bottom: 8px solid #97d1eb;
+    }
+
+    .architecture-aims-quote__author {
+        font-size: 14px;
+    }
+
+    .architecture-aims-slider__number {
+        width: 140px;
+        height: 140px;
+        font-size: 52px;
+    }
+
+    .architecture-aims-slider__button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .architecture-aims__page {
+        display: block;
+    }
+
+    .architecture-ideas__title {
+        font-size: 48px;
+    }
+
+    .architecture-ideas .wrapper {
+        padding-top: 40px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 10%;
+    }
+
+    .architecture-idea__title {
+        font-size: 36px;
+    }
+
+    .architecture-idea__text {
+        padding-top: 16px;
+        line-height: 16px;
+    }
+
+    .keywords-item__title {
+        font-size: 36px;
+    }
+
+    .keywords .keywords__item:hover {
+        outline-offset: -15px;
+        outline: 9px #97d1eb solid;
+    }
+
+    .keywords {
+        margin-top: 133px;
+    }
+
+    .architecture-ideas {
+        margin-top: 65px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        height: 100px;
+    }
+
+    .howwework-content-item__number {
+        font-size: 120px;
+    }
+
+    .howwework-content-item__text {
+        font-size: 30px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        font-size: 14px;
+    }
+
+    .howwework-content__title span:before,
+    .howwework-content__title span:after,
+    .latest-project__title span:before,
+    .latest-project__title span:after {
+        width: 190px;
+    }
+
+    .description__title {
+        font-size: 24px;
+    }
+
+    .description__text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .description__number {
+        font-size: 300px;
+    }
+
+    .description__button {
+        width: 184px;
+        height: 51px;
+        font-size: 14px;
+    }
+
+    .social-networks {
+        margin-top: 40px;
+    }
+
+    .social-networks hr {
+        margin: 25px 50px;
+    }
+
+    .social-networks__item img {
+        width: 100%;
+    }
+
+    .contactus__image {
+        display: block;
+    }
+
+    .contactus__content {
+        outline: 15px solid #97d1eb;
+        outline-offset: -40px;
+    }
+
+    .contactus__form {
+        padding: 80px 0 0 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        height: 130px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .header .menu {
+        display: block;
+    }
+
+    .architecture-aims-quote__title {
+        font-size: 72px;
+        margin-top: 32px;
+        padding-bottom: 30px;
+        border-bottom: 12px solid #97d1eb;
+    }
+
+    .architecture-aims-quote__author {
+        font-size: 16px;
+    }
+
+    .architecture-aims-slider__number {
+        width: 160px;
+        height: 160px;
+        font-size: 62px;
+    }
+
+    .architecture-aims-slider__button {
+        width: 64px;
+        height: 64px;
+    }
+
+    .architecture-aims__page {
+        display: block;
+    }
+
+    .architecture-ideas__title {
+        font-size: 64px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 10%;
+    }
+
+    .architecture-idea__title {
+        font-size: 48px;
+    }
+
+    .architecture-idea__text {
+        padding-top: 20px;
+        line-height: 20px;
+    }
+
+    .keywords-item__title {
+        font-size: 48px;
+    }
+
+    .keywords .keywords__item:hover {
+        outline-offset: -20px;
+        outline: 12px #97d1eb solid;
+    }
+
+    .howwework .howwework-content .howwework-content__title,
+    .howwework .latest-project-content .latest-project__title {
+        height: 120px;
+    }
+
+    .howwework-content-item__number {
+        font-size: 160px;
+    }
+
+    .howwework-content-item__text {
+        font-size: 40px;
+    }
+
+    .description__title {
+        font-size: 36px;
+    }
+
+    .description__text {
+        font-size: 12px;
+        line-height: 32px;
+    }
+
+    .description__number {
+        font-size: 400px;
+    }
+
+    .social-networks {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header .mobile-menu {
+        display: none;
+    }
+
+    .header .menu {
+        display: block;
+    }
+
+    .architecture-aims-quote__title {
+        font-size: 92px;
+        margin-top: 40px;
+        padding-bottom: 47px;
+        border-bottom: 15px solid #97d1eb;
+    }
+
+    .architecture-aims-quote__author {
+        font-size: 18px;
+    }
+
+    .architecture-aims-slider__number {
+        width: 193px;
+        height: 193px;
+        font-size: 72px;
+    }
+
+    .architecture-aims-slider__button {
+        width: 72px;
+        height: 72px;
+    }
+
+    .architecture-aims__page {
+        display: block;
+    }
+
+    .header {
+        height: 170px;
+    }
+
+    .architecture-ideas__title {
+        font-size: 72px;
+    }
+
+    .architecture-ideas .wrapper {
+        padding-top: 80px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 10%;
+    }
+
+    .architecture-idea__title {
+        font-size: 60px;
+    }
+
+    .architecture-idea__text {
+        padding-top: 30px;
+        line-height: 32px;
+    }
+
+    .keywords-item__title {
+        font-size: 60px;
+    }
+
+    .keywords .keywords__item:hover {
+        outline-offset: -25px;
+        outline: 15px #97d1eb solid;
+    }
+
+    .howwework .howwework-content .howwework-content__title,
+    .howwework .latest-project-content .latest-project__title {
+        height: 150px;
+    }
+
+    .howwework-content-item__number {
+        font-size: 222px;
+    }
+
+    .howwework-content-item__text {
+        font-size: 60px;
+    }
+
+    .howwework-content__title,
+    .latest-project__title {
+        font-size: 16px;
+    }
+
+    .description__title {
+        font-size: 44px;
+    }
+
+    .description__text {
+        font-size: 13px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .architecture-ideas__title {
+        font-size: 92px;
+    }
+
+    .architecture-ideas .wrapper {
+        padding-top: 100px;
+    }
+
+    .architecture-ideas__title {
+        margin-right: 18%;
+    }
+
+    .architecture-idea__title {
+        font-size: 72px;
+    }
+
+    .architecture-idea__text {
+        padding-top: 44px;
+        line-height: 48px;
+    }
+
+    .description__text {
+        line-height: 48px;
+    }
 }

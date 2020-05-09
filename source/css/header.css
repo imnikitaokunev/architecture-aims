@@ -9,10 +9,6 @@
     display: flex;
 }
 
-.header {
-    height: 170px;
-}
-
 .header__logo {
     margin-left: 2.3%;
 }
@@ -40,11 +36,6 @@ li {
     margin: 0 35px;
 }
 
-.header .menu .menu__link:hover {
-    color: #fff;
-    background-color: #00b0ff;
-}
-
 .header {
     align-items: center;
     justify-content: space-between;
@@ -52,4 +43,104 @@ li {
 
 .search {
     padding-right: 2.3%;
+}
+
+.menu-toggle {
+    display: block;
+    position: fixed;
+    margin-left: 50px;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menu-toggle a {
+    font-family: "Raleway";
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-toggle a:hover {
+    color: #97d1eb;
+}
+
+.menu-toggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #000;
+    border-radius: 3px;
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.55s ease;
+}
+
+.menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.mobile-menu__items {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 0 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.mobile-menu__items li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.menu-toggle input:checked ~ ul {
+    transform: none;
 }

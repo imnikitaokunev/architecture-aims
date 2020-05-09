@@ -15,6 +15,34 @@
 
     <body>
         <header class="header" id="home">
+            <nav class="mobile-menu">
+                <div class="menu-toggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="mobile-menu__items">
+                        <li class="menu__item">
+                            <a href="#home">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about-us">about us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#clients">clients</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact">contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#blog">blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="header__logo">
                 <a href="#"><img src="./img/logo.png" alt="image" class="logo__image" /></a>
             </div>
@@ -54,32 +82,32 @@
                 </div>
                 <div class="architecture-aims__content">
                     <div class="architecture-aims__slider">
-                        <button class="architecture-aims-slider__button">
+                        <button class="architecture-aims-slider__button" data-action="prev">
                             <img src="img/left.png" alt="Left" />
                         </button>
                         <div class="architecture-aims-slider__number">01</div>
-                        <button class="architecture-aims-slider__button">
+                        <button class="architecture-aims-slider__button" data-action="next">
                             <img src="img/right.png" alt="Right" />
                         </button>
                     </div>
                     <div class="architecture-aims__quote">
-                        <div class="architecture-aims-quote__author">John Doe</div>
-                        <h1 class="architecture-aims-quote__text">Architecture aims at eternity</h1>
+                        <div class="architecture-aims-quote__author slidein">John Doe</div>
+                        <h1 class="architecture-aims-quote__title slidein">Architecture aims at eternity</h1>
                     </div>
                 </div>
                 <div class="architecture-aims__page">
                     <ul>
                         <li class="architecture-aims-page__item selected">
-                            <a href="#01">01</a>
+                            <button data-page="1">01</button>
                         </li>
                         <li class="architecture-aims-page__item">
-                            <a href="#02">02</a>
+                            <button data-page="2">02</button>
                         </li>
                         <li class="architecture-aims-page__item">
-                            <a href="#03">03</a>
+                            <button data-page="3">03</button>
                         </li>
                         <li class="architecture-aims-page__item">
-                            <a href="#04">04</a>
+                            <button data-page="4">04</button>
                         </li>
                     </ul>
                 </div>
@@ -149,31 +177,32 @@
                 <div class="latest-project" id="projects">
                     <div class="latest-project-content">
                         <div class="latest-project__title"><span>Latest project</span></div>
-                        <div class="wrapper">
-                            <div class="latest-project__image">
-                                <img src="./img/latest-project.png" alt="Latest project" />
+                    </div>
+                    <div class="wrapper">
+                        <div class="latest-project__image">
+                            <img src="./img/latest-project.png" alt="Latest project" />
+                        </div>
+                        <div class="latest-project__description">
+                            <h1 class="description__title">
+                                Modern Art Gallery Warsaw Poland
+                            </h1>
+                            <div class="description__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum voluptatem animi
+                                vitae, amet accusamus. Nostrum vitae voluptates, at corrupti repellat rem temporibus
+                                eveniet fugit amet eius! Et, repellendus error.
                             </div>
-                            <div class="latest-project__description">
-                                <h1 class="description__title">
-                                    Modern Art Gallery Warsaw Poland
-                                </h1>
-                                <div class="description__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum voluptatem animi
-                                    vitae, amet accusamus. Nostrum vitae voluptates, at corrupti repellat rem temporibus
-                                    eveniet fugit amet eius! Et, repellendus error.
-                                </div>
-                                <button class="description__button">
-                                    Case study
-                                </button>
-                                <div class="description__number">
-                                    2
-                                </div>
+                            <button class="description__button">
+                                Case study
+                            </button>
+                            <div class="description__number">
+                                2
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="social-networks" id="blog">
+                <h3 class="social-networks__title">Social networks</h3>
                 <hr />
                 <ul class="social-networks-items">
                     <li class="social-networks__item">
@@ -197,6 +226,7 @@
                 </ul>
             </section>
             <section class="contactus" id="contact">
+                <h3 class="contactus__title">Contact us</h3>
                 <div class="contactus__content">
                     <div class="contactus__form">
                         <div class="wrapper">
@@ -233,7 +263,10 @@
             <div class="footer__image">
                 <img src="./img/dark-logo.png" alt="Dark logo" />
             </div>
-            <div class="copyright">Copyright 2016. All right reserved by symu.co.</div>
+            <p class="copyright">Copyright 2016. All right reserved by symu.co.</p>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
