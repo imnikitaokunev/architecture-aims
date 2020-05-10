@@ -217,7 +217,7 @@ main {
 .howwework {
     position: relative;
     justify-content: center;
-    background: url("/img/howwework.png") no-repeat;
+    background: url("../img/howwework.png") no-repeat;
     background-size: 100% 100%;
 }
 
