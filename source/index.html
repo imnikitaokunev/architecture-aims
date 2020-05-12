@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Architecture aims</title>
+
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main-section.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+    </head>
+
+    <body>
+        <header class="header" id="home">
+            <nav class="mobile-menu">
+                <div class="menu-toggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="mobile-menu__items">
+                        <li class="menu__item">
+                            <a href="#home">home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about-us">about us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects">projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#clients">clients</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact">contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#blog">blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__logo">
+                <a href="#"><img src="./img/logo.png" alt="image" class="logo__image" /></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item">
+                        <a href="#home">home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about-us">about us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#projects">projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#clients">clients</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact">contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#blog">blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <a href="#search">
+                    <img src="./img/search.png" alt="image" class="search__image" />
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="architecture-aims">
+                <div class="architecture-aims__image">
+                    <img src="./img/museum.png" alt="Museum" />
+                </div>
+                <div class="architecture-aims__content">
+                    <div class="architecture-aims__slider">
+                        <button class="architecture-aims-slider__button" data-action="prev">
+                            <img src="img/left.png" alt="Left" />
+                        </button>
+                        <div class="architecture-aims-slider__number">01</div>
+                        <button class="architecture-aims-slider__button" data-action="next">
+                            <img src="img/right.png" alt="Right" />
+                        </button>
+                    </div>
+                    <div class="architecture-aims__quote">
+                        <div class="architecture-aims-quote__author slidein">John Doe</div>
+                        <h1 class="architecture-aims-quote__title slidein">Architecture aims at eternity</h1>
+                    </div>
+                </div>
+                <div class="architecture-aims__page">
+                    <ul>
+                        <li class="architecture-aims-page__item selected">
+                            <button data-page="1">01</button>
+                        </li>
+                        <li class="architecture-aims-page__item">
+                            <button data-page="2">02</button>
+                        </li>
+                        <li class="architecture-aims-page__item">
+                            <button data-page="3">03</button>
+                        </li>
+                        <li class="architecture-aims-page__item">
+                            <button data-page="4">04</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="architecture-ideas" id="about-us">
+                <div class="wrapper">
+                    <div class="architecture-idea">
+                        <h2 class="architecture-idea__title">Curabitur volutpat</h2>
+                        <p class="architecture-idea__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas
+                            vehicula eros, et pellentesque justo ornare nec. Curabitur volutpat, quam in mollis luctus,
+                            enim risus libero, eu vehicula sapien nenc et tortor.
+                        </p>
+                    </div>
+                    <h1 class="architecture-ideas__title">We create cool ideas.</h1>
+                </div>
+                <div class="architecture-ideas__image">
+                    <img src="./img/building.png" alt="Building" />
+                </div>
+            </section>
+            <section class="keywords">
+                <div class="keywords__item">
+                    <div class="keywords-item__image">
+                        <img src="img/idea.png" alt="Idea" />
+                    </div>
+                    <h3 class="keywords-item__title">Idea.</h3>
+                </div>
+                <div class="keywords__item">
+                    <div class="keywords-item__image">
+                        <img src="img/concept.png" alt="Concept" />
+                    </div>
+                    <h3 class="keywords-item__title">Concept.</h3>
+                </div>
+                <div class="keywords__item">
+                    <div class="keywords-item__image">
+                        <img src="img/design.png" alt="Design" />
+                    </div>
+                    <h3 class="keywords-item__title">Design.</h3>
+                </div>
+                <div class="keywords__item">
+                    <div class="keywords-item__image">
+                        <img src="img/develop.png" alt="Develop" />
+                    </div>
+                    <h3 class="keywords-item__title">Develop.</h3>
+                </div>
+            </section>
+            <section class="howwework" id="clients">
+                <div class="howwework-content">
+                    <div class="howwework-content__title">
+                        <span>How we work</span>
+                    </div>
+                    <div class="howwework-content__items">
+                        <div class="howwework-content__item">
+                            <div class="howwework-content-item__number">1</div>
+                            <div class="howwework-content-item__text">Dexterity</div>
+                        </div>
+                        <div class="howwework-content__item">
+                            <div class="howwework-content-item__number">2</div>
+                            <div class="howwework-content-item__text">Team</div>
+                        </div>
+                        <div class="howwework-content__item">
+                            <div class="howwework-content-item__number">3</div>
+                            <div class="howwework-content-item__text">Partnership</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-project" id="projects">
+                    <div class="latest-project-content">
+                        <div class="latest-project__title"><span>Latest project</span></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="latest-project__image">
+                            <img src="./img/latest-project.png" alt="Latest project" />
+                        </div>
+                        <div class="latest-project__description">
+                            <h1 class="description__title">
+                                Modern Art Gallery Warsaw Poland
+                            </h1>
+                            <div class="description__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum voluptatem animi
+                                vitae, amet accusamus. Nostrum vitae voluptates, at corrupti repellat rem temporibus
+                                eveniet fugit amet eius! Et, repellendus error.
+                            </div>
+                            <button class="description__button">
+                                Case study
+                            </button>
+                            <div class="description__number">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="social-networks" id="blog">
+                <h3 class="social-networks__title">Social networks</h3>
+                <hr />
+                <ul class="social-networks-items">
+                    <li class="social-networks__item">
+                        <a href="#zeus"><img src="./img/zeus.png" alt="Zeus" /></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a href="#pinterest"><img src="./img/pinterest.png" alt="Pinterest" /></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a href="#gratia"><img src="./img/gratia.png" alt="Gratia" /></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a href="#e"><img src="./img/e.png" alt="E" /></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a href="#luna"><img src="./img/luna.png" alt="Luna" /></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a href="#n"><img src="./img/n.png" alt="N" /></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="contactus" id="contact">
+                <h3 class="contactus__title">Contact us</h3>
+                <div class="contactus__content">
+                    <div class="contactus__form">
+                        <div class="wrapper">
+                            <div class="contactus-form__items">
+                                <button class="contactus-form__item selected">Contact us</button>
+                                <button class="contactus-form__item">Phone</button>
+                                <button class="contactus-form__item">E-mail</button>
+                            </div>
+                            <div class="contactus-form__inputs">
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="Name" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="Phone" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-primary">
+                                    <input placeholder="E-mail" />
+                                </div>
+                                <div class="contactus-form__input contactus-form__input-secondary">
+                                    <textarea placeholder="Message" rows="3"></textarea>
+                                </div>
+                                <button class="contactus-form__button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactus__image">
+                        <img src="img/glass-building.png" alt="Contact us" />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__image">
+                <img src="./img/dark-logo.png" alt="Dark logo" />
+            </div>
+            <p class="copyright">Copyright 2016. All right reserved by symu.co.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

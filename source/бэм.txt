@@ -1,0 +1,83 @@
+header
+	header-logo
+	menu
+		menu-item
+		menu-item
+		menu-item
+		menu-item
+		menu-item
+		menu-item
+	search
+main-section
+	text
+		text-name
+		text-meaning
+			text-meaning-number
+			text-meaning-quote
+	font
+		main-section-image
+		main-section-numbers
+			main-section-numbers-item
+			main-section-numbers-item
+			main-section-numbers-item
+			main-section-numbers-item
+about-project
+	wrapper
+		about-project-title
+		about-project-subtitle
+	about-us
+		about-us-text
+		about-us-image
+section
+	section-item
+		secion-item-image
+		secion-item-title
+	section-item
+		secion-item-image
+		secion-item-title
+	section-item
+		secion-item-image
+		secion-item-title
+	section-item
+		secion-item-image
+		secion-item-title
+how-we-work-section
+	how-we-work-section-title
+	how-we-work
+		howwework-item
+		howwework-item
+		howwework-item
+latest-project-section
+	latest-project-section-title
+	latest-project-section-image
+	latest-project-section-description
+		description-title
+		description-content
+	latest-project-section-button
+social-networks-section
+	social-networks-section-item
+	social-networks-section-item
+	social-networks-section-item
+	social-networks-section-item
+	social-networks-section-item
+	social-networks-section-item
+contact-us-section
+	contact-us-section-image
+	contact-us-section-form
+		contact-us-section-form-items
+			contact-us-section-form-item
+			contact-us-section-form-item
+			contact-us-section-form-item
+		contact-us-section-form-input
+		contact-us-section-form-input
+		contact-us-section-form-input
+		contact-us-section-form-input
+		contact-us-section-form-input
+		contact-us-section-form-button
+footer-section
+	footer-section-image
+	footer-section-title
+	copyright
+	
+		
+	

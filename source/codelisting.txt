@@ -1,0 +1,94 @@
+header
+	header__logo
+	menu
+		menu__item
+		menu__item
+		menu__item
+		menu__item
+		menu__item
+		menu__item
+	search
+architecture-aims
+	architecture-aims__image
+	architecture-aims__content
+		architecture-aims__slider
+			architecture-aims-slider__left
+			architecture-aims-slider__number
+			architecture-aims-slider__right
+		architecture-aims__quote
+			architecture-aims-quote__author
+			architecture-aims-quote__text
+	architecture-aims__page
+		architecture-aims-page__item
+		architecture-aims-page__item
+		architecture-aims-page__item
+		architecture-aims-page__item
+architecture-ideas
+	architecture-idea
+		architecture-idea__title
+		architecture-idea__subtitle
+	architecture-ideas__title
+	architecture-ideas__image
+keywords
+	keywords__item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
+	keywords-item
+		keywords-item__image
+		keywords-item__title
+howwework-section
+	howwework-section__image
+	howwework-content
+		howwework-content__title
+		howwework-content__items
+			howwework-content__item
+				howwework-content-item__number
+				howwework-content-item__text
+			howwework-content__item
+				howwework-content-item__number
+				howwework-content-item__text
+			howwework-content__item
+				howwework-content-item__number
+				howwework-content-item__text
+	latest-project
+		latest-project-content
+			latest-project__title
+			wrapper
+				latest-project__image
+				latest-project__description
+					description__title
+					description__content
+				latest-project__button
+social-networks-section
+	social-networks__items
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+		social-networks-section__item
+contact-us-section
+	contact-us-section__image
+	contact-us-section__form
+		contact-us-section-form__items
+			contact-us-section-form__item
+			contact-us-section-form__item
+			contact-us-section-form__item
+		contact-us-section-form__input
+		contact-us-section-form__input
+		contact-us-section-form__input
+		contact-us-section-form__input
+		contact-us-section-form__input
+		contact-us-section-form__button
+footer
+	footer__image
+	copyright
+	
+		
+	
